@@ -1,10 +1,35 @@
 site_name: my blog
 theme:
-  name: mkdocs
+  name: material
   language: en  # 设置为中文界面
-  palette: 
-    primary: indigo # 主题色
-    accent: indigo
+  # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+plugins:
+  - search:
+      lang: en  # 默认语言
+      separator: '[\s\-\.]+' # 更好的中文搜索分词支持
+    
+- blog:
+      post_url_format: posts/{date}-{slug}/
+      categories_allowed:
+        - 技术
+        - 生活
+        - 学习
 
 nav:
   - 🏠 首页: index.md
