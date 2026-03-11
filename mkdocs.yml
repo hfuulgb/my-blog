@@ -2,7 +2,7 @@ site_name: my blog
 
 theme:
   name: material
-  language: zh  # 建议加上这行，让搜索提示等显示中文
+  # language: zh  # 建议加上这行，让搜索提示等显示中文
   palette: 
     # 浅色模式
     - media: "(prefers-color-scheme: light)"
@@ -25,23 +25,23 @@ plugins:
   - search:
       lang: 
         - en
-        - zh # 建议同时开启中英文搜索
+        # - zh # 建议同时开启中英文搜索
       separator: '[\s\-\.]+'
   - blog:
       post_url_format: posts/{date}-{slug}/
-      categories_allowed:
-        - 技术
-        - 生活
-        - 学习
+      # categories_allowed:
+      #   - 技术
+      #   - 生活
+      #   - 学习
 
 nav:
-  - 🏠 首页: index.md
-  - 💻 技术笔记:
+  - 🏠 index: index.md
+  - 💻 tech:
       - 在 Mac 上配置 Python: tech/python-mac.md
       - MkDocs 部署指南: tech/mkdocs-tips.md
-  - 📚 学业/课程:
+  - 📚 academic:
       - 心理学视频项目: academic/psychology.md
       - 英语学习记录: academic/cet8-vocab.md
-  - 🏸 兴趣爱好:
+  - 🏸 life:
       - 羽毛球进阶: life/badminton.md
-  - 👤 关于我: about.md
+  - 👤 about: about.md
