@@ -1,0 +1,19 @@
+site_name: my blog
+theme:
+  name: mkdocs
+  language: en  # 设置为中文界面
+  palette: 
+    primary: indigo # 主题色
+    accent: indigo
+
+nav:
+  - 🏠 首页: index.md
+  - 💻 技术笔记:
+      - 在 Mac 上配置 Python: tech/python-mac.md
+      - MkDocs 部署指南: tech/mkdocs-tips.md
+  - 📚 学业/课程:
+      - 心理学视频项目: academic/psychology.md
+      - 英语学习记录: academic/cet4-vocab.md
+  - 🏸 兴趣爱好:
+      - 羽毛球进阶: life/badminton.md
+  - 👤 关于我: about.md
