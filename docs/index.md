@@ -18,7 +18,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
       - mkdocs: tech/mkdocs-tips.md
   - 📚 academic:
       - psychology: academic/psychology.md
-      - cet4-vocab: academic/cet4-vocab.md
+      - cet4-vocab: academic/cet8-vocab.md
   - 🏸 life:
       - badminton: life/badminton.md
   - 👤 about: about.md
