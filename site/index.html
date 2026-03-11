@@ -35,10 +35,45 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">首页</a>
+                                <a href="." class="nav-link active" aria-current="page">🏠 首页</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">💻 技术笔记</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="tech/python-mac/" class="dropdown-item">在 Mac 上配置 Python</a>
+</li>
+                                    
+<li>
+    <a href="tech/mkdocs-tips.md" class="dropdown-item">MkDocs 部署指南</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">📚 学业/课程</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="academic/psychology.md" class="dropdown-item">心理学视频项目</a>
+</li>
+                                    
+<li>
+    <a href="academic/cet4-vocab.md" class="dropdown-item">英语学习记录</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">🏸 兴趣爱好</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="life/badminton.md" class="dropdown-item">羽毛球进阶</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="about.md" class="nav-link">关于</a>
+                                <a href="about.md" class="nav-link">👤 关于我</a>
                             </li>
                         </ul>
 
@@ -48,6 +83,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="tech/python-mac/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -94,10 +139,25 @@
 </ul>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</code></pre>
+<ul>
+<li>🏠 首页: index.md</li>
+<li>💻 技术笔记:<ul>
+<li>在 Mac 上配置 Python: tech/python-mac.md</li>
+<li>MkDocs 部署指南: tech/mkdocs-tips.md</li>
+</ul>
+</li>
+<li>📚 学业/课程:<ul>
+<li>心理学视频项目: academic/psychology.md</li>
+<li>英语学习记录: academic/cet4-vocab.md</li>
+</ul>
+</li>
+<li>🏸 兴趣爱好:<ul>
+<li>羽毛球进阶: life/badminton.md</li>
+</ul>
+</li>
+<li>👤 关于我: about.md</li>
+</ul></div>
             </div>
         </div>
 
@@ -179,5 +239,5 @@ docs/
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-03-11 13:09:14.495882+00:00
+Build Date UTC : 2026-03-11 13:10:32.847971+00:00
 -->
